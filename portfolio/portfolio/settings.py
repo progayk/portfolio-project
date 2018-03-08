@@ -137,3 +137,9 @@ STATIC_URL = '/static/'
 # portfolio/media/
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# it will overwrite the settings file in this file.
+try:
+    from local_settings import *
+except ImportError:
+    pass
