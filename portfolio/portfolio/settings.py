@@ -140,6 +140,6 @@ MEDIA_URL = '/media/'
 
 # it will overwrite the settings file in this file.
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
