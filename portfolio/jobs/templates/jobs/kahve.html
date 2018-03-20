@@ -16,7 +16,7 @@
   </head>
 
   <body class="text-center" >
-
+        {% comment %} MAIN PAGE {% endcomment %}
         <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
             <header class="masthead mb-auto">
 
@@ -27,9 +27,8 @@
               <img id="orta-image" src="{% static 'images/coffee1.png' %}" alt="" class="py-4">
               <p class="lead" id='offer'>Devamını kahve içerken dinlemek istiyorum.</p>
             </main>
-
       
-            <footer class="mastfoot mt-auto mb-2 d-flex justify-content-around">
+            <footer class="mastfoot mt-auto mb-4 d-flex justify-content-around">
                 <button class="soru" id="evet" type="button" data-toggle="modal" data-target="#exampleModalCenter">Evet</button>
                 <button class="soru" id="reddet" type="button">Hayır</button>
             </footer>
@@ -53,7 +52,7 @@
           </div>
         </div>
 
-                <!-- Modal HAK BITIMI -->
+        <!-- Modal HAK BITIMI -->
         <div class="modal fade" id="hak-bitimi" tabindex="-1" role="dialog" aria-labelledby="hak-bitimi" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
