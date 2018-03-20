@@ -3,7 +3,7 @@ from .models import Job
 
 # Create your views here.
 def home(request):
-    jobs = Job.objects.all()
+    # jobs = Job.objects.all()
     return render(request, 'jobs/maykjony.html')
 
 

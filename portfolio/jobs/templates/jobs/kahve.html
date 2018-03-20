@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="simale teklif sayfasi">
+    <meta name="description" content="Uğur böceğiyle olan hikayenin devamı...">
     <meta name="author" content="Mayk Jony">
 
     <title>simalyes</title>
@@ -31,11 +31,11 @@
       
             <footer class="mastfoot mt-auto mb-2 d-flex justify-content-around">
                 <button class="soru" id="evet" type="button" data-toggle="modal" data-target="#exampleModalCenter">Evet</button>
-                <button class="soru" id="reddet">Hayır</button>
+                <button class="soru" id="reddet" type="button">Hayır</button>
             </footer>
         </div>
 
-        <!-- Modal -->
+        <!-- Modal EVET -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -43,7 +43,7 @@
                 <h5 class="modal-title">Harbi mi?</h5>
                 </button>
               </div>
-              <div class="modal-body">hello</div>
+              <div class="modal-body">Bunu, Aykıl'a nasıl haber vermek istersin?</div>
               <div class="modal-footer justify-content-around">
                 <a type="button" class="btn btn-secondary" href="tel:+90-530-242-99-67">Ara</a>
                 ya da
@@ -52,6 +52,29 @@
             </div>
           </div>
         </div>
+
+                <!-- Modal HAK BITIMI -->
+        <div class="modal fade" id="hak-bitimi" tabindex="-1" role="dialog" aria-labelledby="hak-bitimi" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header justify-content-around">
+                <h5 class="modal-title">Hayır hakların bitti</h5>
+              </div>
+              <div class="modal-body">Daha fazla hayır hakkı almak için</div>
+              <div class="modal-footer justify-content-around">
+                <a type="button" class="btn btn-secondary" href="tel:+90-530-242-99-67">Ara</a>
+                ya da
+                <a type="button" class="btn btn-secondary" href="https://instagram.com/maykjony/">Mesaj At</a>
+              </div>
+              <div class="modal-body">Seçenekleri tekrar gözden geçir.</div>
+              <div class="modal-footer justify-content-around">
+                <a type="button" class="btn btn-secondary" href="{% url 'teklif' %}">Evet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
 
     <!-- Bootstrap core JavaScript

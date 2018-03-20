@@ -55,8 +55,10 @@ function reddiCevap(){
     $('body').css('box-shadow', teklifler[count].color + 70 + " 0px 0px 60px 0px inset");
     console.log($('#orta-image').attr('src'));
     count++;
+    console.log(count);
     if (count >= 3){
-        count = 0;
+        // count = 0;
+        gameOver();
     };
     fadeIn($('main'));
 }
@@ -71,4 +73,10 @@ function fadeOut (item, cb) {
     item.animate({
         opacity: 0
     },1000, cb);
+}
+
+function gameOver() {
+    $('#reddet').unbind('click');
+    $('#reddet').attr('data-toggle','modal');
+    $('#reddet').attr('data-target',"#hak-bitimi");
 }
