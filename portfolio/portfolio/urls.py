@@ -23,5 +23,7 @@ import blogs.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.home, name='home'),
+    path('simalyes/', jobs.views.teklif, name='teklif'),
+    path('SimalinMerakEttigiHikaye/', jobs.views.story, name='story'),
     path('blogs/', include('blogs.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

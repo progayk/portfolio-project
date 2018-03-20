@@ -1,0 +1,136 @@
+:root{
+    --coffee-color: #AF704B;
+}
+
+body{
+    background-color: white;
+    color: var(--coffee-color);
+    box-shadow: rgba(171, 112, 75, 0.5) 0px 0px 60px 0px inset;
+        -webkit-transition: all 1s;
+       -moz-transition: all 1s;
+        -ms-transition: all 1s;
+         -o-transition: all 1s;
+            transition: all 1s;
+}
+
+a{
+    color: var(--coffee-color);
+}
+
+button {
+    color: var(--coffee-color);
+    cursor: pointer;
+}
+
+p, h1, img, button {
+    opacity: 0;
+    -webkit-transition: all 1s;
+       -moz-transition: all 1s;
+        -ms-transition: all 1s;
+         -o-transition: all 1s;
+            transition: all 1s;
+}
+
+.modal{
+    text-shadow: none;
+}
+
+.modal a{
+    opacity: 1;
+    color: inherit;
+    text-shadow: none;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+/*Remove outline from the button*/
+button:focus {outline:0;}
+
+#orta-image{
+    max-width: 150px;
+}
+
+#offer{
+    text-shadow: none;
+}
+
+.fadeInTitle {
+    animation: fadeIn 1s 1 both;
+    animation-delay: 1s;
+}
+
+.fadeInOffer {
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+.fadeInImage {
+    animation: fadeIn 1s forwards;
+}
+
+.popUpEvet {
+    animation: popUpEvet 1s forwards;
+    animation-delay: 3s;
+}
+
+
+.popUpHayir {
+    animation: popUpHayir 1s forwards;
+    animation-delay: 3.2s;
+}
+
+/*======================*/
+/*ANIMATIONS*/
+/*======================*/
+
+@keyframes disappearAll {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes popUpEvet {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popUpHayir {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*=========================*/
