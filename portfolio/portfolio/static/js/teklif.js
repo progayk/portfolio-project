@@ -33,6 +33,10 @@ $(function () {
 })
 
 function init(){
+    $('body').prepend('<div id="x" style="position:fixed;overflow:hidden;width:0px;height:0px;"></div>');
+    for(k in teklifler) {
+        $('#x').append('<img src="'+teklifler[k].image+'">');
+    }
     $('#orta-image').toggleClass("fadeInImage");
     $('#title').toggleClass("fadeInTitle");
     $('#offer').toggleClass("fadeInOffer");
