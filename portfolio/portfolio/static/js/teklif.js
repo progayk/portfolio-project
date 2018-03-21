@@ -24,12 +24,12 @@ var teklifler = [coffee, wine, dinner];
 var count = 1;
 
 // GET INITIAL CONNECTION TIME
-var now = new Date();
+// var now = new Date();
 
 // GET IP ADDRESS
-var a = $.get("http://ipinfo.io", function (response) {
-    return response.ip;
-}, "jsonp");
+// var a = $.get("http://ipinfo.io", function (response) {
+//     return response.ip;
+// }, "jsonp");
 
 // When the page is load for the first time
 $(document).ready(function(){
@@ -54,23 +54,23 @@ function init(){
 
 // run reddiCevap when animation terminates.
 $('#reddet').click(function(){
-    var end = new Date().getTime();
-	var elName = "reddet: " + $('#title').text();
-	postIt(end, elName);
+    // var end = new Date().getTime();
+	// var elName = "reddet: " + $('#title').text();
+	// postIt(end, elName);
     fadeOut($('main'), reddiCevap);
 });
 
-$('#evet').click(function(){
-    var end = new Date().getTime();
-    var elName = "kabul: " + $('#title').text();
-	postIt(end, elName);
-});
+// $('#evet').click(function(){
+//     var end = new Date().getTime();
+//     var elName = "kabul: " + $('#title').text();
+// 	postIt(end, elName);
+// });
 
-$('.modal-footer a').click(function(){
-    var end = new Date().getTime();
-    var elName = $(this).attr('id');
-	postIt(end, elName);
-});
+// $('.modal-footer a').click(function(){
+//     var end = new Date().getTime();
+//     var elName = $(this).attr('id');
+// 	postIt(end, elName);
+// });
 
 function reddiCevap(){
     $('#orta-image').attr('src',teklifler[count].image);
@@ -102,24 +102,24 @@ function fadeOut (item, cb) {
 }
 
 function gameOver() {
-    var end = new Date().getTime();
-	var elName = 'game over';
-	postIt(end, elName);
+    // var end = new Date().getTime();
+	// var elName = 'game over';
+	// postIt(end, elName);
     $('#reddet').unbind('click');
     $('#reddet').attr('data-toggle','modal');
     $('#reddet').attr('data-target',"#hak-bitimi");
 }
 
 // AJAX POST FUNCTION
-function postIt (end, elName) {
-	$.ajax({
-		type: 'POST',
-		url: 'http://rest.learncode.academy/api/maykIsWatching/activityOfHer',
-		data: {
-			ip: a.responseJSON.ip,
-			act: elName,
-			time: now,
-			resp: ((end - now.getTime()) / 1000) + " seconds",
-		},
-	});	 
-}
+// function postIt (end, elName) {
+// 	$.ajax({
+// 		type: 'POST',
+// 		url: 'http://rest.learncode.academy/api/maykIsWatching/activityOfHer',
+// 		data: {
+// 			ip: a.responseJSON.ip,
+// 			act: elName,
+// 			time: now,
+// 			resp: ((end - now.getTime()) / 1000) + " seconds",
+// 		},
+// 	});	 
+// }
