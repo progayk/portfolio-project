@@ -13,3 +13,7 @@ def teklif(request):
 
 def story(request):
     return render(request, 'jobs/simalyes.html')
+
+
+def burger(request):
+    return render(request, 'jobs/index.html')

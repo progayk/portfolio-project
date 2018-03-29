@@ -23,6 +23,7 @@ import blogs.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.home, name='home'),
+    path('burger/', jobs.views.burger, name='burger'),
     path('simalyes/', jobs.views.teklif, name='teklif'),
     path('SimalinMerakEttigiHikaye/', jobs.views.story, name='story'),
     path('blogs/', include('blogs.urls')),
